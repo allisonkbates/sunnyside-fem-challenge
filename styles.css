@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--very-dark-blue: hsl(212, 27%, 19%);
+	--very-dark-gray-blue: hsl(213, 9%, 39%);
+	--dark-grayish-blue: hsl(232, 10%, 55%);
+	--grayish-blue: hsl(210, 4%, 67%);
+	--soft-red: hsl(7, 99%, 70%);
+	--yellow: hsl(51, 100%, 49%);
+	--dark-cyan: hsl(167, 40%, 24%);
+	--dark-blue: hsl(198, 62%, 26%);
+	--dark-moderate-cyan: hsl(168, 34%, 41%);
+	--cyan: #90D4C5;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Barlow', sans-serif;
+}
+
+/* General Font Styles */
+
+h1 {
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--very-dark-blue);
+}
+
+h3 {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+}
+
+h4 {
+	font-family: 'Fraunces', serif;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: var(--grayish-blue);
+	text-align: center;
+}
+
+p {
+	line-height: 1.5;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* Header Styles */
+
+header {
+	margin: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hide-mobile, .collapsed {
+	display: none;
+}
+
+/* Section Styles */
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+.section__container--hero {
+	background-image: url('./images/mobile/image-header.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 540px;
+}
+
+.section__image {
+	object-fit: cover;
+	width: 100%;
+}
+
+.section__content {
+	padding: 44px 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--dark-grayish-blue);
+}
+
+.section__text--gd {
+	color: var(--dark-cyan);
+}
+
+.section__text--ph {
+	color: var(--dark-blue);
+}
+
+.section__text--quote {
+	color: var(--very-dark-gray-blue);
+}
+
+.section__text--name {
+	color: var(--very-dark-blue);
+	font-family: 'Fraunces', serif;
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+.section__text--title {
+	color: var(--grayish-blue);
+	font-size: 1rem;
+	margin: 0;
+	font-weight: ;
+}
+
+.section__link {
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+	color: var(--very-dark-blue);
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1rem;
+	padding: 22px;
+}
+
+.section__link--yellow:hover { /* Come back to these and style the underline correctly */
+	color: var(--yellow);
+}
+
+.section__link--red:hover {
+	color: var(--soft-red);
+}
+
+.section__bg-image {
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.section__bg-image--gd {
+	background-image: url('./images/mobile/image-graphic-design.jpg');	
+}
+
+.section__bg-image--ph {
+	background-image: url('./images/mobile/image-photography.jpg');
+}
+
+.section__avatar {
+	border-radius: 50%;
+}
+
+.section__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.image-gallery {
+	width: 50%;
+}
+
+footer {
+	background-color: var(--cyan);
+	color: var(--dark-cyan);
+	padding: 44px 22px;
+}
